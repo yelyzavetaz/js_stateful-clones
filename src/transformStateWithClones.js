@@ -9,7 +9,7 @@ function transformStateWithClones(state, actions) {
 
     switch (action.type) {
       case 'clear':
-        clonedState = {};
+        clonedState = { ...{} };
         break;
 
       case 'addProperties':
